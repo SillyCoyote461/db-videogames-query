@@ -74,3 +74,17 @@
 --JOIN award_videogame ON videogames.id = award_videogame.videogame_id
 --WHERE tournaments.year = '2019'
 --AND award_videogame.year = '2018'
+
+
+-----BONUS-----
+--SELECT TOP 1 *
+--FROM videogames
+--JOIN software_houses ON videogames.software_house_id = software_houses.id
+--ORDER BY release_date ASC
+
+--SELECT videogames.id, COUNT(reviews.rating)
+--FROM videogames
+--JOIN reviews 
+--ON videogames.id = reviews.videogame_id
+--GROUP BY videogames.id
+--ORDER BY COUNT(reviews.rating) DESC
